@@ -2,43 +2,8 @@
   margin: 0;
   padding: 0;}
 
-#container{
-  height: 200rem;
-  background: rgb(229, 196, 196);
-}
-
-#h1{
-  font: monaco;
-}
-
-  /*TASSSSSSSSSSSS*/
-  #navigation {
-    width: 1.4rem;
-    float: left;
-    color:white;
-    left: 0rem;
-    top: 0rem;
-    bottom: 0rem;
-    float: right;
-    position: fixed;
-    padding: 4.5rem ;
-    text-align: center;
-    opacity: 0.7;
-    background-color: rgb(87, 69, 58);
-  }
-
   #homepage {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.5rem;
-    right: 1rem;
-    top: 1rem;
-    bottom: 1rem;
-    width: 24rem;
     float: right;
-    border: 0.2rem solid rgb(188, 179, 173);
-    position: absolute;
-    padding: 18.5rem ;
-    text-align: center;
     /*background-image: url("../PictureTest/p1.webp");
     background-repeat: no-repeat;
     animation: change 10s infinite ease-in;*/
@@ -60,52 +25,21 @@
 }
 
 #productspage{
-    right: 1rem;
-    top: 43.2rem;
-    width: 59rem;
-    height: 38.2rem;
-    float: right;
-    border: 0.2rem solid rgb(71, 42, 23);
-    position: absolute;
-    padding: 1rem ;
-    text-align: center;
+    
 }
 
 #aboutpage{
-    right: 1rem;
-    top: 86.4rem;
-    width: 59rem;
-    height: 38.2rem;
-    float: right;
-    border: 0.2rem solid rgb(71, 42, 23);
-    position: absolute;
-    padding: 1rem ;
-    text-align: center;
+   
 }
 
 #contactpage{right: 1rem;
-  top: 129.6rem;
-  width: 59rem;
-  height: 38.2rem;
-  float: right;
-  border: 0.2rem solid rgb(71, 42, 23);
-  position: absolute;
-  padding: 1rem ;
+
   text-align: center;}
 
 #copyright{
-    right: 1rem;
-    bottom: 0rem;
-    top: 170.01rem;
-    width: 59rem;
-    height: 0.6rem;
-    float: right;
-    border: 0.2rem solid rgb(71, 42, 23);
-    position: absolute;
-    padding: 1rem ;
-    text-align: center;
+    
 }
- 
+
 /*BACKGROUND*/
 #shape1::before {
   position: fixed;
@@ -114,12 +48,14 @@
   right: -4rem;
   width: 30rem;
   height: 926px;
+  opacity: 0.15;
   transform: translate(-50%, -50%);
-  background: #694a46;
+  background: #33c1f9;
   border-radius: 80% 20% 78% 22% / 59% 75% 25% 41% ;
   will-change:border-radius;
   animation: shape 6s linear infinite;
 }
+
 
 #shape2::before {
   position: fixed;
@@ -129,13 +65,14 @@
   width: 36rem;
   height: 38rem;
   transform: translate(-50%, -50%);
-  background: #895a54;
+  opacity: 0.15;
+  background: #01ff4d;
   border-radius: 66% 34% 49% 51% / 32% 64% 36% 68% ;
   will-change:border-radius;
   animation: shape 6s linear infinite;
 }
 
-#shape3::before {
+/*#shape3::before {
   position: fixed;
   content:"";
   bottom: 18rem;
@@ -143,11 +80,12 @@
   width: 30rem;
   height: 20rem;
   transform: translate(-50%, -50%);
-  background: #694a46;
+  opacity: 0.7;
+  background: #73b5cf;
   border-radius:  32% 64% 36% 68% / 66% 34% 49% 51% ;
   will-change:border-radius;
   animation: shape 10s linear infinite;
-}
+}*/
 
 #shape4::before {
 position: fixed;
@@ -157,25 +95,15 @@ right: -2rem;
 width: 38rem;
 height: 30rem;
 transform: translate(-50%, -50%);
-background: #5a413e;
+background: #f000b0;
+opacity: 0.15;
 border-radius:  32% 64% 36% 68% / 66% 34% 49% 51% ;
 will-change:border-radius;
 animation: shape 4s linear infinite;
 }
 
-#shape5::before {
-position: fixed;
-content:"";
-bottom: -4rem;
-right: 12rem;
-width: 40rem;
-height: 20rem;
-transform: translate(-50%, -50%);
-background: #5a413e;
-border-radius: 55% 45% 70% 30% / 50% 68% 32% 50% ;
-will-change:border-radius;
-animation: shape 6s linear infinite;
-}
+
+
 
 @keyframes shape {
 0%, 100%{
@@ -194,6 +122,167 @@ animation: shape 6s linear infinite;
 69%{
   border-radius: 52% 48% 33% 67% / 46% 64% 36% 54%; 
   transform: translate3d(0,-3px,0) rotateZ (0.01deg);
+  }
+  
+}
+main {
+  margin-left: 8rem;
+
+  padding:10rem;
+}
+
+/*TASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
+:root {
+  font-size: 16px;
+  font-family: 'Open Sans';
+  --text-primary: #ec0c0c;
+  --text-secondary: #519cff;
+  --bg-primary:  #FAF0DC;
+  --transition-speed: 600ms;
+}
+
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #3ef3cc;
+}
+
+/*making sidebar seperate from content */
+
+.navbar {
+  position: fixed;
+  background-color: var(--bg-primary);
+  transition: width 600ms ease;
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-item {
+  width: 100%;
+}
+
+.nav-item:last-child {
+  margin-top: auto;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  filter: grayscale(100%) opacity(0.7);
+  transition: var(--transition-speed);
+}
+
+.nav-link:hover {
+  filter: grayscale(0%) opacity(1);
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+}
+
+.link-text {
+  display: none;
+  margin-left: 0rem;
+}
+
+.nav-link svg {
+  width: 1rem;
+  min-width: 2rem;
+  margin: 0 1.5rem;
+}
+
+.logo {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  font-size: 1.5rem;
+  letter-spacing: 0.3ch;
+  width: 100%;
+}
+
+.logo svg {
+  transform: rotate(0deg);
+  transition: var(--transition-speed);
+}
+
+.logo-text
+{
+  display: inline;
+  position: absolute;
+  left: -999px;
+  transition: var(--transition-speed);
+}
+
+.navbar:hover .logo svg {
+  transform: rotate(-180deg);
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  .nav-link {
+    justify-content: center;
+  }
+
+  main {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar {
+    top: 0;
+    width: 5.5rem;
+    height: 100vh;
+  }
+
+  .navbar:hover {
+    width: 16rem;
+  }
+
+  .navbar:hover .link-text {
+    display: inline;
+  }
+
+  .navbar:hover .logo svg
+  {
+    margin-left: 12rem;
+  }
+
+  .navbar:hover .logo-text
+  {
+    left: 0px;
   }
   
 }
