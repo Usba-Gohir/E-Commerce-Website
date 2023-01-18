@@ -1,0 +1,199 @@
+*{
+  margin: 0;
+  padding: 0;}
+
+#container{
+  height: 200rem;
+  background: rgb(229, 196, 196);
+}
+
+#h1{
+  font: monaco;
+}
+
+  /*TASSSSSSSSSSSS*/
+  #navigation {
+    width: 1.4rem;
+    float: left;
+    color:white;
+    left: 0rem;
+    top: 0rem;
+    bottom: 0rem;
+    float: right;
+    position: fixed;
+    padding: 4.5rem ;
+    text-align: center;
+    opacity: 0.7;
+    background-color: rgb(87, 69, 58);
+  }
+
+  #homepage {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    right: 1rem;
+    top: 1rem;
+    bottom: 1rem;
+    width: 24rem;
+    float: right;
+    border: 0.2rem solid rgb(188, 179, 173);
+    position: absolute;
+    padding: 18.5rem ;
+    text-align: center;
+    /*background-image: url("../PictureTest/p1.webp");
+    background-repeat: no-repeat;
+    animation: change 10s infinite ease-in;*/
+  }
+
+/*SLIDING IMAGES FOR HOMPAGE*/
+@keyframes change{
+  0% {
+  background-image: url("../PictureTest/p1.webp");
+  }
+
+  20% {
+    background-image: url("../PictureTest/p2.jpg");
+    }
+  
+  40% {
+    background-image: url("../PictureTest/p3.webp");
+    }
+}
+
+#productspage{
+    right: 1rem;
+    top: 43.2rem;
+    width: 59rem;
+    height: 38.2rem;
+    float: right;
+    border: 0.2rem solid rgb(71, 42, 23);
+    position: absolute;
+    padding: 1rem ;
+    text-align: center;
+}
+
+#aboutpage{
+    right: 1rem;
+    top: 86.4rem;
+    width: 59rem;
+    height: 38.2rem;
+    float: right;
+    border: 0.2rem solid rgb(71, 42, 23);
+    position: absolute;
+    padding: 1rem ;
+    text-align: center;
+}
+
+#contactpage{right: 1rem;
+  top: 129.6rem;
+  width: 59rem;
+  height: 38.2rem;
+  float: right;
+  border: 0.2rem solid rgb(71, 42, 23);
+  position: absolute;
+  padding: 1rem ;
+  text-align: center;}
+
+#copyright{
+    right: 1rem;
+    bottom: 0rem;
+    top: 170.01rem;
+    width: 59rem;
+    height: 0.6rem;
+    float: right;
+    border: 0.2rem solid rgb(71, 42, 23);
+    position: absolute;
+    padding: 1rem ;
+    text-align: center;
+}
+ 
+/*BACKGROUND*/
+#shape1::before {
+  position: fixed;
+  content:"";
+  top: -28rem;
+  right: -4rem;
+  width: 30rem;
+  height: 926px;
+  transform: translate(-50%, -50%);
+  background: #694a46;
+  border-radius: 80% 20% 78% 22% / 59% 75% 25% 41% ;
+  will-change:border-radius;
+  animation: shape 6s linear infinite;
+}
+
+#shape2::before {
+  position: fixed;
+  content:"";
+  top: -4rem;
+  left: -8rem;
+  width: 36rem;
+  height: 38rem;
+  transform: translate(-50%, -50%);
+  background: #895a54;
+  border-radius: 66% 34% 49% 51% / 32% 64% 36% 68% ;
+  will-change:border-radius;
+  animation: shape 6s linear infinite;
+}
+
+#shape3::before {
+  position: fixed;
+  content:"";
+  bottom: 18rem;
+  right: -3rem;
+  width: 30rem;
+  height: 20rem;
+  transform: translate(-50%, -50%);
+  background: #694a46;
+  border-radius:  32% 64% 36% 68% / 66% 34% 49% 51% ;
+  will-change:border-radius;
+  animation: shape 10s linear infinite;
+}
+
+#shape4::before {
+position: fixed;
+content:"";
+bottom: -14rem;
+right: -2rem;
+width: 38rem;
+height: 30rem;
+transform: translate(-50%, -50%);
+background: #5a413e;
+border-radius:  32% 64% 36% 68% / 66% 34% 49% 51% ;
+will-change:border-radius;
+animation: shape 4s linear infinite;
+}
+
+#shape5::before {
+position: fixed;
+content:"";
+bottom: -4rem;
+right: 12rem;
+width: 40rem;
+height: 20rem;
+transform: translate(-50%, -50%);
+background: #5a413e;
+border-radius: 55% 45% 70% 30% / 50% 68% 32% 50% ;
+will-change:border-radius;
+animation: shape 6s linear infinite;
+}
+
+@keyframes shape {
+0%, 100%{
+  border-radius: 76% 24% 83% 17% / 55% 66% 34% 45% ;
+  transform: translate3d(0,0,0);
+  }
+
+34% {
+  border-radius: 76% 24% 68% 32% / 64% 39% 61% 36% ; 
+  transform: translated (0,5px,0) rotatez(0.01deg);
+}
+50%{
+  transform: translated (0,0,0) rotate (0.01deg);
+}
+
+69%{
+  border-radius: 52% 48% 33% 67% / 46% 64% 36% 54%; 
+  transform: translate3d(0,-3px,0) rotateZ (0.01deg);
+  }
+  
+}
