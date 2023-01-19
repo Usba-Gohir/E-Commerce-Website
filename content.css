@@ -3,10 +3,13 @@
   padding: 0;}
 
   #homepage {
-    float: right;
-    /*background-image: url("../PictureTest/p1.webp");
-    background-repeat: no-repeat;
-    animation: change 10s infinite ease-in;*/
+    padding-left: 16rem;
+    padding-top: 0.1rem;
+    padding-right: 10rem;
+    bottom: 10rem;
+    margin: 10rem;
+    text-align: center;
+    font-size: 2rem;
   }
 
 /*SLIDING IMAGES FOR HOMPAGE*/
@@ -25,7 +28,7 @@
 }
 
 #productspage{
-    
+  
 }
 
 #aboutpage{
@@ -41,13 +44,13 @@
 }
 
 /*BACKGROUND*/
-#shape1::before {
+#blueshape::before {
   position: fixed;
   content:"";
-  top: -28rem;
+  top: -18rem;
   right: -4rem;
-  width: 30rem;
-  height: 926px;
+  width: 60rem;
+  height: 40rem;
   opacity: 0.15;
   transform: translate(-50%, -50%);
   background: #33c1f9;
@@ -56,14 +59,13 @@
   animation: shape 6s linear infinite;
 }
 
-
-#shape2::before {
+#greenshape::before {
   position: fixed;
   content:"";
   top: -4rem;
   left: -8rem;
-  width: 36rem;
-  height: 38rem;
+  width: 38rem;
+  height: 50rem;
   transform: translate(-50%, -50%);
   opacity: 0.15;
   background: #01ff4d;
@@ -72,28 +74,13 @@
   animation: shape 6s linear infinite;
 }
 
-/*#shape3::before {
-  position: fixed;
-  content:"";
-  bottom: 18rem;
-  right: -3rem;
-  width: 30rem;
-  height: 20rem;
-  transform: translate(-50%, -50%);
-  opacity: 0.7;
-  background: #73b5cf;
-  border-radius:  32% 64% 36% 68% / 66% 34% 49% 51% ;
-  will-change:border-radius;
-  animation: shape 10s linear infinite;
-}*/
-
-#shape4::before {
+#pinkshape::before {
 position: fixed;
 content:"";
 bottom: -14rem;
-right: -2rem;
-width: 38rem;
-height: 30rem;
+right: 2rem;
+width: 70rem;
+height: 35rem;
 transform: translate(-50%, -50%);
 background: #f000b0;
 opacity: 0.15;
@@ -101,9 +88,6 @@ border-radius:  32% 64% 36% 68% / 66% 34% 49% 51% ;
 will-change:border-radius;
 animation: shape 4s linear infinite;
 }
-
-
-
 
 @keyframes shape {
 0%, 100%{
@@ -125,6 +109,9 @@ animation: shape 4s linear infinite;
   }
   
 }
+
+
+
 main {
   margin-left: 8rem;
 
